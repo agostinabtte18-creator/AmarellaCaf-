@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amarella Café - Home </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo-titulo">
+        <a href="./index.html">
+        <img src="./assets/img/LogoFinal.jpg" alt="Logo de Amarella Café" title="Logo de Amarella de Café" class="LogoFinal">
+        </a>    
+       <h1>Amarella Café</h1> <!-- h1 se utiliza uno solo por archivo html -->
+       <!--h1-h6 no puedo saltear etiquetas -->
+       <!-- h:headerin= Titular // 1 al 6 es la relevancia -->
+        </div>
+       <nav>
+        <!--ul= lista desordenada // ol= lista ordenada // li = item de lista -->
+         <ul class="nav">
+            <li>
+                 <a href="./assets/pages/galeria.html">Galería</a>
+            </li>
+            <li>
+                <a href="./assets/pages/reservas.html">Reservas</a>
+            </li>
+            <li>
+                <a href="./assets/pages/sobre-notrosos.html">Notrosos</a>
+            </li>
+            <li>
+                <a href="./assets/pages/tienda.html">Tienda</a>
+            </li>
+         </ul>
+        </nav>
+
+    </header> 
+
+    <main class="flex">
+        <!-- Esta contiene el contenido principal de mi página -->
+        <!-- Carrusel y un párrafo -->
+         <!--<img src="./assets/img/IMG_6963.PNG" alt="Cada flor, una historia; cada taza, un abrazo" title="Cafetería" 
+         class="Carrusel">-->
+         <div id="carouselExampleIndicators" class="carousel slide">
+             <div class="carousel-indicators">
+                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+             <div class="carousel-inner">
+                 <div class="carousel-item active">
+                     <img src="./assets/img/Frente Cafeteria.PNG" class="d-block imagen-car" alt="...">
+                 </div>
+
+                <div class="carousel-item">
+                     <img src="./assets/img/Exterior Trasero Cerrado..jpeg" class="d-block imagen-car" alt="...">
+                 </div>
+
+                 <div class="carousel-item">
+                     <img src="./assets/img/Interior.jpg" class="d-block imagen-car" alt="...">
+                 </div>
+
+                <div class="carousel-item">
+                     <img src="./assets/img/Patio Trasero.png" class="d-block imagen-car" alt="...">
+                 </div>
+         </div>
+             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+             </button>
+             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+              </button>
+        </div>
+
+         <section>
+         <h2>"Donde cada taza tiene una historia y cada rincòn un suspiro"</h2>
+         <p>En el corazón de un parque centenario, escondida entre árboles susurrantes y caminos de piedra, florece 
+            Amarella Café: un refugio donde el tiempo se detiene y el alma respira. La casa que lo alberga alguna vez
+             fue una residencia olvidada del siglo XIX, donde según cuenta la leyenda local, vivía una joven apasionada 
+             por la repostería y las flores silvestres: Amarella.
+             En Amarella Café no solo servimos café , te invitamos a vivirlo.Porque no solo es un lugar para tomar café,
+             es un lugar para reencontrarse.
+             Nos inspira la belleza de lo simple , el arte en una taza , y la magia de compartir una mesa.
+             Veni a descubrir el encanto de una Cafetería diferente : ìntima , soñadora y deliciosa.
+             <p>
+        </section>
+        </main>
+
+    <footer>
+        <h2>Derechos reservados de Amarella Café</h2>
+        <h2>Hecho con amor por Cele🤎</h2>
+        
+        <nav>
+            <ul class="nav">
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="./assets/img/Logo de Whatsapp.jfif" alt="Logo de Whatsapp" class="LogoWhatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./assets/img/Logo de Facebook.png" alt="Logo de Facebook" class="LogoFacebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="./assets/img/Logo de Instagram.webp" alt="Logo de Instagram" class="LogoInstagram">
+                    </a>
+                </li>
+                    <a href="https://x.com/iniciarsesion_" target="_blank">
+                        <img src="./assets/img/Logo X" alt="Logo x" class="LogoX">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    
+</body>
+</html>

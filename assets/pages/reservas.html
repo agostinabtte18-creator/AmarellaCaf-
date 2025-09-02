@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Amarella Café - Contacto </title>
+    <link rel="stylesheet" href="../../assets/styles/styles.css">
+
+</head>
+<body>
+    <header>
+        <a href="../../index.html"> Home</a>
+        
+       <img src="../../assets/img/LogoFinal.jpg" alt="Logo de Amarella Café" title="Logo de Amarella de Café" class="LogoFinal">
+       
+       <h1>Amarella Café</h1> <!-- h1 se utiliza uno solo por archivo html -->
+       <!--h1-h6 no puedo saltear etiquetas -->
+       <!-- h:headerin= Titular // 1 al 6 es la relevancia -->
+       <nav>
+        <!--ul= lista desordenada // ol= lista ordenada // li = item de lista -->
+         <ul class="nav">
+             <li>
+                 <a href="./galeria.html">Galería</a>
+             </li>
+            <li>
+                <a href="./reservas.html">Reservas</a>
+            </li>
+            <li>
+                <a href="./sobre-notrosos.html">Sobre notrosos</a>
+            </li>
+            <li>
+                <a href="./tienda.html">Tienda</a>
+            </li>
+         </ul>
+       </nav>
+    </header>
+
+    <Main class="reservas">
+        <form class="reserva-form">
+            <label for="na" class="na">Nombre completo</label>
+            <input type="text" id="nombre" name="name" class="name" required>
+           
+            <label for="em" class="em">Correo electrónico</label>
+            <input type="email" id="email" name="email" class="email">
+            
+            <label for="ph" class="ph">Teléfono</label>
+            <input type="tel" id="telefono" name="phone" class="phone" required>
+           
+            <label for="dt" class="dt">Fecha</label>
+            <input type="date" id="fecha" name="date" class="date" required>
+            
+            <label for="hr" class="hr">Hora</label>
+            <input type="time" id="hora" name="hour" class="hour" required>
+            
+            <label for="pp" class="pp">Cantidad de personas</label>
+            <input type="number" id="personas" name="people" class="people" min="1" max="20" required>
+           
+            <input type="submit" value="reservar" class="reservar">
+
+            <input type="submit" value="comenzar de nuevo" class="cdn">
+        </form>
+
+      <section>
+        <h2>Donde nos encontramos </h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1751601192775!6m8!1m7!1sPSlLHL6oyX
+        mVPLaqYkg9Ng!2m2!1d-31.43276384843479!2d-64.17739743546957!3f318.2820689460347!4f0.23555
+        066173570083!5f0.7820865974627469" style="border:0;" allowfullscreen="" 
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </Main>
+
+    <footer>
+        <h2>Derechos reservados de Amarella Café</h2>
+        <h2>Hecho con amor por  Cele🤎</h2>
+
+        <nav>
+            <ul class="nav">
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="../img/Logo de Whatsapp.jfif" alt="Logo de Whatsapp" class="LogoWhatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="../img/Logo de Facebook.png" alt="Logo de Facebook" class="LogoFacebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../img/Logo de Instagram.webp" alt="Logo de Instagram" class="LogoInstagram">
+                    </a>
+                </li>
+                    <a href="https://x.com/iniciarsesion_" target="_blank">
+                        <img src="../img/Logo X" alt="Logo x" class="LogoX">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

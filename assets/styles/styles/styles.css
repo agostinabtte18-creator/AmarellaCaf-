@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
+
+
+p {
+        font-size:17px;
+        color: black;
+        font-family: Libertinus Mono display;
+        font-weight: 400;
+        margin: 50px 30px  ;
+     }
+
+/*HOME*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 15vh;
+    padding: 0 30px;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.LogoFinal {
+    height: 14vh;
+    width: auto;
+    }
+
+header h1{
+    color: brown;
+    font-size: 3rem;
+    font-family: Dancing Script; 
+    font-weight: 700;
+}
+
+header li {
+    border: 1.5px solid  rgb(202, 97, 31);
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(202, 97, 31);
+} 
+
+@media (min-width:310px) and (max-width:430px ){
+    header {
+        flex-direction: column;
+        height: fit-content;
+       /* gap: 10px;*/
+    }
+
+    .logo-titulo {
+        justify-content: center;
+    }
+
+    header h1 {
+        display: none;
+    }
+    
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px
+        ;
+    }
+
+    ul{ 
+        gap: 15px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    header li { 
+        font-size: 1.5rem;
+    }
+    
+}
+
+ul {
+    list-style: none;
+    font-family: Libertinus Mono display;
+    font-weight: 700;
+    margin: 15px 50px;
+    gap: 15px;
+    
+}
+
+.flex
+    {display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+     }
+
+.flex h2  {
+    display: flex; 
+    justify-content: center;
+    font-size: 25px;
+    color:brown;
+    font-family: Libertinus Mono display;
+    font-weight: 700;
+    gap: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: brown;
+    font-family: Libertinus Mono display;
+    font-weight: 400;
+}
+
+.LogoWhatsapp { 
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    width: auto;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.LogoFacebook { 
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    width: auto;
+}
+
+.LogoInstagram { 
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    width: auto;
+}
+
+.LogoX { 
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    width: auto;
+}
+
+@media (min-width:310px) and (max-width:430px ){
+    footer  {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .LogoFacebook .LogoInstagram .LogoWhatsapp .LogoX {
+        height: 7vh;
+    }
+    
+    .nav {
+        gap:10px;
+    }
+    ul{ 
+        gap: 20px;
+    }
+}
+
+.imagen-car { 
+    width: 50vw;
+    height: auto;
+    margin-top: 20px;
+}
+
+ul {
+    gap: 15px;
+}
+
+.carousel-inner { 
+    gap: 15px;
+    }
+
+/*TIENDA*/
+
+.Desayunos {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+    "d1 d2 d2"
+    "d4 d5 d6";
+    gap: 20px;
+     }
+
+.combo {
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(236, 157, 88, 0.735);
+   padding: 20px; 
+   }
+
+.combo__imagen {
+    box-shadow: 10px 10px 5px  white; 
+    height: 200px;
+    width: auto;    
+}
+
+.combo__texto {
+    padding-top: 10px;
+     }
+
+.combo__boton {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    border: none;
+    font-weight: bold;
+    background-color:  rgb(202, 97, 31);
+     }
+
+.combo__boton:hover {
+    background-color: maroon;     
+}
+
+.combo__boton--agotado {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: aliceblue;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(92 , 91 , 91 );
+     }
+
+.combo__boton--agotado:hover {
+    text-decoration: line-through;     
+}
+
+@media (min-width:310px) and (max-width:430px ){
+    .Desayunos {
+        display: grid;
+        grid-template-areas: 
+        "d1"
+        "d2"
+        "d3"
+        "d4"
+        "d5"
+        "d6";
+        /*flex-direction: column;*/
+        height: fit-content;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .combo {
+        width: 140px;
+        padding: 100px;
+    }
+
+    .combo__titulo {
+       font-size: 25px;
+    }
+
+    .combo__texto {
+        font-size: 1.5rem;
+    }
+}
+/*
+.OPD1 {
+    height: 40vh;
+    width: auto;
+    margin: 20px;
+}
+
+.OPD2 {
+    height: 40vh;
+    width: auto;
+    margin: 20px;
+}
+
+.OPD3 {
+    height: 40vh;
+    width: auto;
+    margin: 20px;
+}
+*/
+/*RESERVAS*/
+
+.reservas { 
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+     
+  
+form {
+        display: grid;
+        grid-template-areas: 
+        "na . name name"
+        "ag . age age "
+        "em . email email"
+        "comme . . ."
+        "comment comment comment comment"
+        ". enviar reset .";
+        gap: 20px;
+      }
+ 
+label  {
+    grid-area: label;
+}    
+
+input {
+    grid-area: inpud;
+}
+
+iframe {
+    height: 50vh;
+    width: 50vh;
+}
+
+textarea {
+    height: 20vh;
+}
+
+.na {
+    grid-area: na;
+}
+
+.name {
+    grid-area: name;
+}
+
+.ag {
+    grid-area: ag;
+}
+
+.age {
+    grid-area:age;
+}
+
+.em {
+    grid-area: em;
+}
+
+.email {
+    grid-area: email;
+}
+
+.comme {
+    grid-area: comme;
+}
+
+.comment {
+    grid-area: comment;
+}
+
+.enviar {
+    grid-area: enviar;
+}
+
+.reset {
+    grid-area: reset;
+}
+
+@media (min-width:310px) and (max-width:430px ){
+    .reservas {
+        flex-direction: column;
+    }
+    form {
+        grid-template-areas: 
+        "na"
+        "name"
+        "ag"
+        "age"
+        "em"
+        "email"
+        "comme"
+        "comment"
+        "enviar"
+        "reset";
+    }
+
+}
+
+h2 {
+    font-size:20px;
+    color:brown;
+    font-family: Libertinus Mono display;
+    font-weight: 700;
+    margin: 20px 20px 40px 20px;
+    }
+
+/*GALERÌA*/
+
+.Exterior {
+    height: 40vh;
+    width: auto;
+    margin: 20px;
+}
+
+.Interior {
+    height: 40vh;
+    width: auto;
+    margin: 20px;
+}
+
+.FrenteCafeteria {
+    height: 40vh;
+    width: auto;
+    margin: 20px;
+}
+
+.PatioTrasero {
+    height: 40vh;
+    width: auto;
+    margin: 20px;
+}
+
+@media (min-width:310px) and (max-width:430px) {
+    .main {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+    .IMG_6963 {
+        height: 40vh;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .NH {
+        flex-direction: column;
+    }
+    .p{
+        font-size: 1.5rem;
+    }
+    .flex h2 {
+        font-size: 15px;
+    }
+}
+
+/*SOBRE NOSOTROS*/
+
+.NH {
+    display:flex;
+    padding: 15px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.NH h2 {
+    font-size:17px;
+    color:brown;
+    font-family: Libertinus Mono display;
+    font-weight: 700;
+    margin: 50px;
+    }
+
+.CafeteríaI {
+    height: 40vh;
+    width: auto;
+    margin: 20px ;
+}
+
