@@ -39,17 +39,17 @@ header nav ul {
   gap: 15px;
   font-weight: 700;
 }
-header nav li {
+header nav ul li {
   border: 2px solid;
   color: rgb(202, 97, 31);
 }
-header nav li a {
+header nav ul li a {
   text-decoration: none;
   font-family: "Libertinus Mono display";
   color: brown;
   padding: 8px 15px;
 }
-header nav li a:hover {
+header nav ul li a:hover {
   background-color: rgb(240, 230, 205);
 }
 
@@ -110,7 +110,7 @@ header nav li a:hover {
   height: auto;
 }
 .flex .carousel-inner {
-  padding: 10px;
+  padding: 30px;
 }
 
 @media (max-width: 430px) {
@@ -360,6 +360,36 @@ header nav li a:hover {
     margin: 20px 20px 40px 20px;
   }
 }
+@keyframes scale {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 2;
+  }
+}
+.Galería img:hover {
+  animation: scale 2s forwards ease-in-out;
+}
+
+@keyframes LogoWhatsapp {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(15px);
+  }
+  40% {
+    transform: translateX(-15px);
+  }
+  60% {
+    transform: translateX(0);
+  }
+}
+footer .LogoWhatsapp {
+  animation: LogoWhatsapp 2s infinite ease-in-out;
+}
+
 footer {
   display: flex;
   justify-content: space-around;
@@ -420,49 +450,18 @@ footer .nav {
 }
 .Galería {
   display: grid;
-  grid-template-columns: repeat 3, 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "Ext Int Ft" " PT IOc . ";
-  gap: 20px;
+  gap: 10px;
   justify-items: center;
   align-items: center;
 }
-.Galería .Ext {
-  height: 40vh;
+.Galería img {
+  height: 30vh;
   width: auto;
-  margin: 20px;
+  margin: 10px;
   border-radius: 10px;
 }
-.Galería .Int {
-  height: 40vh;
-  width: auto;
-  margin: 20px;
-  border-radius: 10px;
-}
-.Galería .Ft {
-  height: 40vh;
-  width: auto;
-  margin: 20px;
-  border-radius: 10px;
-}
-.Galería .PT {
-  height: 40vh;
-  width: auto;
-  margin: 20px;
-  border-radius: 10px;
-}
-.Galería .IOc {
-  height: 40vh;
-  width: auto;
-  margin: 20px;
-  border-radius: 10px;
-}
-.Galería .ExtOcu {
-  height: 40vh;
-  width: auto;
-  margin: 20px;
-  border-radius: 10px;
-}
-
 @media (max-width: 430px) {
   .Galería {
     display: flex;

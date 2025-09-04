@@ -1,4 +1,6 @@
 @use "_variables" as v;
+@use "anims";
+
 
 footer {
     display: flex;
@@ -16,6 +18,7 @@ footer {
         position: fixed;
         bottom: 50px;
         right: 50px;
+        @extend %vibrar
     }
 
     .LogoFacebook { 

@@ -34,10 +34,9 @@ header {
             list-style: none;
             margin: 15px 50px;
             gap: 15px;
-            font-weight: 700;    
-              }
-
-            li {
+            font-weight: 700;  
+            
+             li {
                  border: 2px solid;
                  color: v.$colorSecundario;
 
@@ -48,12 +47,13 @@ header {
                     padding: 8px 15px;
 
                    &:hover {
-                        background-color: rgb(240, 230, 205);
-                    }
-                }
+                         background-color: rgb(240, 230, 205);
+                          }
+                  }
+              }
             }
         }
-    }
+ }
 
  @include v.mobile {
         header {
