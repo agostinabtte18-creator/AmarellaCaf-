@@ -1,522 +1,475 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
-
-
-p {
-        font-size:17px;
-        color: black;
-        font-family: Libertinus Mono display;
-        font-weight: 400;
-        margin: 50px 30px  ;
-     }
-
-/*HOME*/
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    height: 15vh;
-    padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 2;
+}
+header .logo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .LogoFinal {
+  height: 12vh;
+  width: auto;
+  border-radius: 10px;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-family: "Dancing Script";
+  font-weight: 700;
+  color: brown;
+  margin: 0;
+}
+header nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 15px 50px;
+  gap: 15px;
+  font-weight: 700;
+}
+header nav li {
+  border: 2px solid;
+  color: rgb(202, 97, 31);
+}
+header nav li a {
+  text-decoration: none;
+  font-family: "Libertinus Mono display";
+  color: brown;
+  padding: 8px 15px;
+}
+header nav li a:hover {
+  background-color: rgb(240, 230, 205);
 }
 
-.logo-titulo {
-    display: flex;
-    align-items: center;
+@media (max-width: 430px) {
+  header {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .logo-titulo {
+    justify-content: center;
+  }
+  h1 {
+    display: none;
+  }
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
-}
-
-.LogoFinal {
-    height: 14vh;
-    width: auto;
-    }
-
-h1{
-    color: brown;
-    font-size: 3rem;
-    font-family: Dancing Script; 
-    font-weight: 700;
-    justify-content: center;
-}
-
-header li {
-    border: 1.5px solid  rgb(202, 97, 31);
-}
-
-.nav {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-a{
-    padding: 10px;
-    text-decoration: none;
-    color: rgb(202, 97, 31);
-} 
-
-.carousel-inner {
-    padding: 10px;
-   
-} 
-
-
-@media (min-width:310px) and (max-width:430px ){
-    header {
-        flex-direction: column;
-        height: fit-content;
-       /* gap: 10px;*/
-    }
-
-    .logo-titulo {
-        justify-content: center;
-    }
-
-    header h1 {
-        display: none;
-    }
-    
-    .nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px
-        ;
-    }
-
-    ul{ 
-        gap: 15px;
-        display: flex;
-        flex-flow: row wrap;
-    }
-    
-    header li { 
-        font-size: 1.5rem;
-    }
-    
-}
-
-ul {
-    list-style: none;
-    font-family: Libertinus Mono display;
-    font-weight: 700;
-    margin: 15px 50px;
+  }
+  ul {
+    font-size: 1, 5 rem;
     gap: 15px;
-    
-}
-
-.flex
-    {display: flex;
-    /*flex-direction: column;*/
-    justify-content: center;
-    align-items: center;
-     }
-
-.flex h2  {
-    display: flex; 
-    justify-content: center;
-    font-size: 25px;
-    color:brown;
-    font-family: Libertinus Mono display;
-    font-weight: 700;
-    gap: 15px;
-}
-
-footer {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: brown;
-    font-family: Libertinus Mono display;
-    font-weight: 400;
+    flex-flow: row wrap;
+  }
+  li {
+    font-weight: 300;
+  }
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: brown;
+  font-family: "Libertinus Mono display";
+  font-weight: 700;
+  padding: 20px;
+  gap: 20px;
+}
+.flex p {
+  font-family: "Libertinus Mono display";
+  font-size: 17px;
+  color: black;
+  font-weight: 400;
+  margin: 50px 30px;
+}
+.flex .carouselExampleIndicators {
+  width: 500px;
+  height: auto;
+}
+.flex .imagen-car {
+  width: 500px;
+  height: auto;
+}
+.flex .carousel-inner {
+  padding: 10px;
 }
 
-.LogoWhatsapp { 
-    display: flex;
-    justify-content: space-between;
-    height: 10vh;
-    width: auto;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-}
-
-.LogoFacebook { 
-    display: flex;
-    justify-content: space-between;
-    height: 8vh;
-    width: auto;
-}
-
-.LogoInstagram { 
-    display: flex;
-    justify-content: space-between;
-    height: 10vh;
-    width: auto;
-}
-
-.LogoX { 
-    display: flex;
-    justify-content: space-between;
-    height: 7vh;
-    width: auto;
-}
-
-@media (min-width:310px) and (max-width:430px ){
-    footer  {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .LogoFacebook .LogoInstagram .LogoWhatsapp .LogoX {
-        height: 7vh;
-    }
-    
-    .nav {
-        gap:10px;
-    }
-    ul{ 
-        gap: 20px;
-    }
-}
-
-.imagen-car { 
-    width: 50vw;
+@media (max-width: 430px) {
+  .flex {
+    flex-direction: column;
+  }
+  .flex .imagen-car {
+    width: 350px;
     height: auto;
-    margin-top: 20px;
+  }
+  .flex p {
+    font-family: "Libertinus Mono display";
+    font-size: 17px;
+    color: black;
+    font-weight: 400;
+    margin: 30px 20px;
+  }
+}
+.tienda .Desayunos {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: "d1 d2 d3" "d4 d5 d6";
+  gap: 20px;
+  padding: 20px 60px;
+}
+.tienda .Desayunos .combo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 580px;
+  width: auto;
+  background-color: rgba(236, 157, 88, 0.735);
+  padding: 20px;
+  border-radius: 20px;
+}
+.tienda .Desayunos .combo__titulo {
+  color: brown;
+  font-size: 25px;
+  padding: 15px;
+}
+.tienda .Desayunos .combo__imagen {
+  box-shadow: 10px 10px 5px white;
+  height: 200px;
+  width: auto;
+}
+.tienda .Desayunos .combo__texto {
+  padding-top: 30px;
+}
+.tienda .Desayunos .combo__boton {
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  border: none;
+  font-weight: bold;
+  background-color: rgb(202, 97, 31);
+  margin: 20px;
+  padding: 15px;
+}
+.tienda .Desayunos .combo__boton:hover {
+  background-color: brown;
+}
+.tienda .Desayunos .combo__boton--agotado {
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  color: aliceblue;
+  border: none;
+  font-weight: bold;
+  background-color: rgb(92, 91, 91);
+  margin: 20px;
+  padding: 15px;
+}
+.tienda .Desayunos .combo__boton--agotado:hover {
+  text-decoration: line-through;
+}
+.tienda p {
+  font-family: "Libertinus Mono display";
+  font-size: 19px;
+  color: black;
+  font-weight: 400;
+  margin: 20px 10px;
+  padding: 30px;
 }
 
-ul {
-    gap: 15px;
-}
-
-.carousel-inner { 
-    gap: 15px;
-    }
-
-/*TIENDA*/
-
-.Desayunos {
+@media (max-width: 430px) {
+  .tienda .Desayunos {
     display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-areas:
-    "d1 d2 d2"
-    "d4 d5 d6";
-    gap: 20px;
- }
-
-.combo {
-    display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   background-color: rgba(236, 157, 88, 0.735);
-   padding: 20px;
-   border-radius: 20px; 
-   }
-
-.combo__imagen {
-    box-shadow: 10px 10px 5px  white; 
-    height: 200px;
-    width: auto;    
-}
-
-.combo__texto {
-    padding-top: 10px;
-     }
-
-.combo__boton {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-    border: none;
-    font-weight: bold;
-    background-color:  rgb(202, 97, 31);
-     }
-
-.combo__boton:hover {
-    background-color: maroon;     
-}
-
-.combo__boton--agotado {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-    color: aliceblue;
-    border: none;
-    font-weight: bold;
-    background-color: rgb(92 , 91 , 91 );
-     }
-
-.combo__boton--agotado:hover {
-    text-decoration: line-through;     
-}
-
-@media (min-width:310px) and (max-width:430px ){
-    .Desayunos {
-        display: grid;
-        grid-template-areas: 
-        "d1"
-        "d2"
-        "d3"
-        "d4"
-        "d5"
-        "d6";
-        /*flex-direction: column;*/
-        height: fit-content;
-        margin-top: 50px;
-        gap: 20px;
-    }
-
-    .combo {
-        width: 140px;
-        padding: 100px;
-    }
-
-    .combo__titulo {
-       font-size: 25px;
-    }
-
-    .combo__texto {
-        font-size: 1.5rem;
-        margin: 70%;
-    }
-}
-/*
-.OPD1 {
-    height: 40vh;
-    width: auto;
-    margin: 20px;
-}
-
-.OPD2 {
-    height: 40vh;
-    width: auto;
-    margin: 20px;
-}
-
-.OPD3 {
-    height: 40vh;
-    width: auto;
-    margin: 20px;
-}
-*/
-/*RESERVAS*/
-
-.reservas { 
+    grid-template-areas: "d1" "d2" "d3" "d4" "d5" "d6";
     padding: 15px;
-    display: flex;
-    gap: 10px;
-    justify-content: space-around;
+    gap: 15px;
+  }
+  .tienda .Desayunos .combo {
+    height: 450px;
+    width: 320px;
+    background-color: rgba(236, 157, 88, 0.735);
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .tienda .Desayunos .combo__titulo {
+    font-size: 18px;
+    padding: 0;
+    gap: 0;
+  }
+  .tienda .Desayunos .combo__imagen {
+    height: 150px;
+    width: auto;
+    padding: 0;
+  }
+  .tienda .Desayunos .combo__texto {
+    font-size: 1rem;
+    padding-top: 20px;
+  }
+  .tienda .Desayunos .combo__boton {
+    margin: 10px;
+    padding: 5px;
+  }
+  .tienda .Desayunos .combo__boton--agotado {
+    margin: 10px;
+    padding: 5px;
+  }
+  .tienda p {
+    font-size: 16px;
+    margin: 10px;
+    padding: 15px;
+  }
 }
-     
-
-.reserva-form {
-        display:grid;
-        grid-template-areas:
-        "na . name name " 
-        "em . email email"
-        "ph . phone phone"
-        "dt . date date "
-        "hr . hour hour"
-        "pp . people people"
-        ". reservar cdn .";
-        gap: 10px;
-        height: 200px;
-         }
-
-label  {
-        grid-area: label;
-    }
-
-input {
-        grid-area: label;
-        width: 20vw;
-    }
-
-iframe {
-        height: 60vh;
-        width:  60vh;
-    }
-.na {
-        grid-area: na;
-    }
-
-.name {
-        grid-area: name;
-    }
-
-.em   {
-        grid-area: em;
-    }
-
-.email {
-        grid-area: email;
-    }
-
-.ph {
-        grid-area: ph;
-    }
-
-.phone {
-        grid-area: phone ;
-    }
-
-.dt {
-        grid-area: dt;
-    }
-
-.date {
-        grid-area: date;
-    }
-
-.hr {
-        grid-area: hr;
-    }
-
-.hour {
-        grid-area: hour;
-    }
-
-.pp {
-        grid-area: pp;
-    }
-
-.people {
-        grid-area: people;
-    }
-
-.reservar {
-        grid-area: reservar;
-    }
-
-.cdn {
-        grid-area: cdn;
-    }
-    
-@media (min-width:310px) and (max-width:430px ){
-    .reservas {
-        flex-direction: column;
-    }
-    form {
-        grid-template-areas: 
-        "na"
-        "name"
-        "ag"
-        "age"
-        "em"
-        "email"
-        "comme"
-        "comment"
-        "enviar"
-        "reset";
-    }
-
+.NH {
+  display: flex;
+  padding: 15px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.NH h2 {
+  font-size: 25px;
+  color: brown;
+  font-family: "Libertinus Mono display";
+  font-weight: 700;
+  margin: 30px;
+}
+.NH p {
+  font-family: "Libertinus Mono display";
+  font-size: 17px;
+  color: black;
+  font-weight: 400;
+  margin: 20px 10px;
+}
+.NH .CafeteríaI {
+  height: 40vh;
+  width: auto;
+  margin: 20px;
+  border-radius: 10px;
 }
 
-h2 {
-    font-size:20px;
-    color:brown;
-    font-family: Libertinus Mono display;
+@media (max-width: 430px) {
+  .NH {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.reservas {
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+.reservas h2 {
+  font-size: 20px;
+  color: brown;
+  font-family: "Libertinus Mono display";
+  font-weight: 700;
+  padding: 20px;
+  gap: 20px;
+}
+.reservas .reserva-form {
+  display: grid;
+  grid-template-areas: "na . name name " "em . email email" "ph . phone phone" "dt . date date " "hr . hour hour" "pp . people people" ". reservar cdn .";
+  gap: 10px;
+  height: 200px;
+}
+.reservas .reserva-form label {
+  grid-area: label;
+}
+.reservas .reserva-form input {
+  grid-area: label;
+  width: 20vw;
+}
+.reservas .reserva-form .na {
+  grid-area: na;
+}
+.reservas .reserva-form .name {
+  grid-area: name;
+}
+.reservas .reserva-form .em {
+  grid-area: em;
+}
+.reservas .reserva-form .email {
+  grid-area: email;
+}
+.reservas .reserva-form .ph {
+  grid-area: ph;
+}
+.reservas .reserva-form .phone {
+  grid-area: phone;
+}
+.reservas .reserva-form .dt {
+  grid-area: dt;
+}
+.reservas .reserva-form .date {
+  grid-area: date;
+}
+.reservas .reserva-form .hr {
+  grid-area: hr;
+}
+.reservas .reserva-form .hour {
+  grid-area: hour;
+}
+.reservas .reserva-form .pp {
+  grid-area: pp;
+}
+.reservas .reserva-form .people {
+  grid-area: people;
+}
+.reservas .reserva-form .reservar {
+  grid-area: reservar;
+}
+.reservas .reserva-form .cdn {
+  grid-area: cdn;
+}
+.reservas iframe {
+  height: 60vh;
+  width: 60vh;
+}
+
+@media (max-width: 430px) {
+  .reservas {
+    flex-direction: column;
+  }
+  .reservas form {
+    grid-template-areas: "na" "name" "ag" "age" "em" "email" "comme" "comment" "enviar" "reset";
+  }
+  h2 {
+    font-size: 20px;
+    color: brown;
+    font-family: "Libertinus Mono display";
     font-weight: 700;
     margin: 20px 20px 40px 20px;
-    }
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: brown;
+  font-family: "Libertinus Mono display";
+  font-weight: 400;
+}
+footer .LogoWhatsapp {
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  width: auto;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+footer .LogoFacebook {
+  display: flex;
+  justify-content: space-between;
+  height: 6vh;
+  width: auto;
+}
+footer .LogoInstagram {
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  width: auto;
+}
+footer .LogoX {
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+  width: auto;
+}
+footer h2 {
+  font-size: 20px;
+}
+footer .nav {
+  display: flex;
+  list-style: none;
+}
 
-/*GALERÌA*/
-
-.Galería {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-    "Ext Int Ft"
-    " PT IOc . ";
+@media (max-width: 430px) {
+  footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .LogoFacebook .LogoInstagram .LogoWhatsapp .LogoX {
+    height: 7vh;
+  }
+  .nav {
+    gap: 10px;
+  }
+  ul {
     gap: 20px;
+  }
+}
+.Galería {
+  display: grid;
+  grid-template-columns: repeat 3, 1fr;
+  grid-template-areas: "Ext Int Ft" " PT IOc . ";
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.Galería .Ext {
+  height: 40vh;
+  width: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+.Galería .Int {
+  height: 40vh;
+  width: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+.Galería .Ft {
+  height: 40vh;
+  width: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+.Galería .PT {
+  height: 40vh;
+  width: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+.Galería .IOc {
+  height: 40vh;
+  width: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+.Galería .ExtOcu {
+  height: 40vh;
+  width: auto;
+  margin: 20px;
+  border-radius: 10px;
 }
 
-
-.Ext {
-    height: 40vh;
-    width: auto;
-    margin: 20px;
-}
-
-.Int {
-    height: 40vh;
-    width: auto;
-    margin: 20px;
-}
-
-.Ft {
-    height: 40vh;
-    width: auto;
-    margin: 20px;
-}
-
-.PT {
-    justify-self: center;
-    align-self: center;
-    height: 40vh;
-    width: auto;
-    margin: 20px;
-}
-
-.IOc {
-    justify-self: center;
-    align-self: center;
-    height: 40vh;
-    width: auto;
-    margin: 20px;
-}
-@media (min-width:310px) and (max-width:430px) {
-    .main {
-        margin-top: 25px;
-        flex-direction: column;
-    }
-    .IMG_6963 {
-        height: 40vh;
-    }
-    .flex {
-        flex-direction: column;
-    }
-    .NH {
-        flex-direction: column;
-    }
-    .p{
-        font-size: 1.5rem;
-    }
-    .flex h2 {
-        font-size: 15px;
-    }
-    .Galería {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-/*SOBRE NOSOTROS*/
-
-.NH {
-    display:flex;
+@media (max-width: 430px) {
+  .Galería {
+    display: flex;
+    flex-direction: column;
     padding: 15px;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
+    gap: 0;
+  }
 }
 
-.NH h2 {
-    font-size:17px;
-    color:brown;
-    font-family: Libertinus Mono display;
-    font-weight: 700;
-    margin: 50px;
-    }
-
-.CafeteríaI {
-    height: 40vh;
-    width: auto;
-    margin: 20px ;
-}
-
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,65 @@
+@use "_variables" as v;
+
+.Galería  {
+        display: grid;
+        grid-template-columns: repeat (3 , 1fr);
+        grid-template-areas:
+        "Ext Int Ft"
+        " PT IOc . ";
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+
+        .Ext {
+            height: 40vh;
+            width: auto;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .Int {
+            height: 40vh;
+            width: auto;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .Ft {
+            height: 40vh;
+            width: auto;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .PT {
+            height: 40vh;
+            width: auto;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .IOc {
+            height: 40vh;
+            width: auto;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .ExtOcu  {
+            height: 40vh;
+            width: auto;
+            margin: 20px;
+            border-radius: 10px;
+        }
+  }
+
+@include v.mobile {
+    .Galería {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 0;
+     }
+}
+
+     

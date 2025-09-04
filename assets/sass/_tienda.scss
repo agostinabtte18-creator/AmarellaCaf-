@@ -1,0 +1,140 @@
+@use "_variables" as v;
+
+.tienda {
+     .Desayunos {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas:
+        "d1 d2 d3"
+        "d4 d5 d6";
+        gap: 20px;
+        padding: 20px 60px;
+
+        .combo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 580px;
+            width: auto;
+            background-color: rgba(236, 157, 88, 0.735);
+            padding: 20px;
+            border-radius: 20px; 
+         }
+   
+        .combo__titulo {
+            color: v.$colorPrimario;
+            font-size: 25px;
+            padding: 15px;
+         }
+
+        .combo__imagen {
+            box-shadow: 10px 10px 5px  white; 
+            height: 200px;
+            width: auto;    
+        }
+
+        .combo__texto {
+            padding-top: 30px;
+         }
+
+        .combo__boton {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            border: none;
+            font-weight: bold;
+            background-color: v.$colorSecundario;
+            margin: 20px;
+            padding: 15px;
+         }
+
+        .combo__boton:hover {
+            background-color: v.$colorPrimario;   
+        }
+
+        .combo__boton--agotado {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            color: aliceblue;
+            border: none;
+            font-weight: bold;
+            background-color: rgb(92 , 91 , 91 );
+            margin: 20px;
+            padding: 15px;
+            }
+
+        .combo__boton--agotado:hover {
+            text-decoration: line-through;    
+          
+        }
+
+    }
+
+    p {
+        font-family: v.$fuenteSecundaria;
+        font-size: 19px;
+        color: black;
+        font-weight: 400;
+        margin: 20px 10px;
+        padding: 30px;
+     }
+}
+
+ @include v.mobile {
+    .tienda {
+        .Desayunos {
+            display: grid;
+            grid-template-areas: 
+            "d1"
+            "d2"
+            "d3"
+            "d4"
+            "d5"
+            "d6";
+            padding: 15px;
+            gap: 15px;
+
+            .combo {
+                height: 450px;
+                width: 320px;
+                background-color: rgba(236, 157, 88, 0.735);
+                padding: 20px;
+                border-radius: 20px; 
+            }
+
+            .combo__titulo {
+                font-size: 18px;
+                padding: 0;
+                gap: 0;
+            }
+            
+            .combo__imagen {
+                height: 150px;
+                width: auto;
+                padding: 0;    
+            }
+
+            .combo__texto {
+                font-size: 1rem;
+                padding-top: 20px;
+            }
+
+            .combo__boton {            
+                margin: 10px;
+                padding: 5px;
+            }
+
+             .combo__boton--agotado {
+                margin: 10px;
+                padding: 5px;
+                }
+          } 
+            p {
+                 font-size: 16px;
+                 margin: 10px;
+                 padding: 15px;
+                }
+     } 
+}
+    

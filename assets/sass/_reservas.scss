@@ -1,0 +1,128 @@
+@use "_variables" as v;
+
+.reservas { 
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+
+    h2  {
+        font-size: 20px;
+        color: v.$colorPrimario;
+        font-family: v.$fuenteSecundaria;
+        font-weight: 700;
+        padding: 20px;
+        gap: 20px;
+     }
+
+    .reserva-form {
+            display:grid;
+            grid-template-areas:
+            "na . name name " 
+            "em . email email"
+            "ph . phone phone"
+            "dt . date date "
+            "hr . hour hour"
+            "pp . people people"
+            ". reservar cdn .";
+            gap: 10px;
+            height: 200px;
+            
+            label  {
+                    grid-area: label;
+                }
+
+            input {
+                    grid-area: label;
+                    width: 20vw;
+                }
+                  
+            .na {
+                grid-area: na;
+            }
+
+            .name {
+                    grid-area: name;
+                }
+
+            .em   {
+                    grid-area: em;
+                }
+
+            .email {
+                    grid-area: email;
+                }
+
+            .ph {
+                    grid-area: ph;
+                }
+
+            .phone {
+                    grid-area: phone ;
+                }
+
+            .dt {
+                    grid-area: dt;
+                }
+
+            .date {
+                    grid-area: date;
+                }
+
+            .hr {
+                    grid-area: hr;
+                }
+
+            .hour {
+                    grid-area: hour;
+                }
+
+            .pp {
+                    grid-area: pp;
+                }
+
+            .people {
+                    grid-area: people;
+                }
+
+            .reservar {
+                    grid-area: reservar;
+                }
+
+            .cdn {
+                    grid-area: cdn;
+                }
+            }
+                    
+            iframe {
+                height: 60vh;
+                width:  60vh;
+            }   
+  }
+
+ @include v.mobile {
+    .reservas {
+        flex-direction: column;
+        form {
+        grid-template-areas: 
+        "na"
+        "name"
+        "ag"
+        "age"
+        "em"
+        "email"
+        "comme"
+        "comment"
+        "enviar"
+        "reset";
+         }
+      }
+
+    h2 {
+        font-size:20px;
+        color: v.$colorPrimario;
+        font-family: v.$fuenteSecundaria;
+        font-weight: 700;
+        margin: 20px 20px 40px 20px;
+            }
+ }

@@ -1,0 +1,41 @@
+@use "_variables" as v;
+
+.NH {
+    display:flex;
+    padding: 15px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size:25px;
+        color: v.$colorPrimario;
+        font-family: v.$fuenteSecundaria;
+        font-weight: 700;
+        margin: 30px;
+    }
+   
+    p {
+        font-family: v.$fuenteSecundaria;
+        font-size:17px;
+        color: black;
+        font-weight: 400;
+        margin: 20px 10px;
+     }
+     
+    .CafeteríaI {
+        height: 40vh;
+        width: auto;
+        margin: 20px ;
+        border-radius: 10px;
+    }
+}
+
+ @include v.mobile {
+    .NH {
+        flex-direction: column;
+
+        gap: 15px;
+     } 
+}
+    

@@ -1,0 +1,71 @@
+@use "_variables" as v;
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: v.$colorPrimario;
+    font-family: v.$fuenteSecundaria;
+    font-weight: 400;
+
+    .LogoWhatsapp { 
+        display: flex;
+        justify-content: space-between;
+        height: 8vh;
+        width: auto;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+    }
+
+    .LogoFacebook { 
+        display: flex;
+        justify-content: space-between;
+        height: 6vh;
+        width: auto;
+    }
+
+    .LogoInstagram { 
+        display: flex;
+        justify-content: space-between;
+        height: 8vh;
+        width: auto;
+    }
+
+    .LogoX { 
+        display: flex;
+        justify-content: space-between;
+        height: 5vh;
+        width: auto;
+    }
+
+    h2 { 
+        font-size: 20px;
+    }
+
+    .nav { 
+        display: flex;
+        list-style: none;
+    }
+}
+
+@include v.mobile {
+        footer {
+            flex-direction: column;
+            gap: 15px;
+         }
+
+        .LogoFacebook .LogoInstagram .LogoWhatsapp .LogoX {
+            height: 7vh;
+        }
+        
+        .nav {
+            gap:10px;
+        }
+        
+        ul{ 
+            gap: 20px;
+        }
+}
+
+
