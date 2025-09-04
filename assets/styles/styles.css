@@ -102,8 +102,12 @@ header nav ul li a:hover {
   margin: 50px 30px;
 }
 .flex .carouselExampleIndicators {
-  width: 500px;
+  width: 100px;
   height: auto;
+}
+.flex .carouselExampleIndicators .carrusel-indicators {
+  position: absolute;
+  bottom: 10px;
 }
 .flex .imagen-car {
   width: 500px;
