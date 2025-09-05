@@ -5,8 +5,8 @@
         display: grid;
         grid-template-columns: repeat(3 , 1fr);
         grid-template-areas:
-        "Ext Int Ft"
-        " PT IOc . ";
+        "Ext Int ExtOcu"
+        "Ft PT IOc ";
         gap: 10px;
         justify-items: center;
         align-items: center;
@@ -31,7 +31,10 @@
         flex-direction: column;
         padding: 15px;
         gap: 0;
-     }
-}
 
-     
+        img {
+            height: 20vh;
+            width: auto;
+          }
+      }
+}     

@@ -87,10 +87,16 @@
 
             .reservar {
                     grid-area: reservar;
+                    &:hover {
+                         background-color: rgb(240, 230, 205);
+                          }
                 }
 
             .cdn {
                     grid-area: cdn;
+                    &:hover {
+                         background-color: rgb(240, 230, 205);
+                          }
                 }
             }
                     

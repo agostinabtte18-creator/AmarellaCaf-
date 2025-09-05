@@ -39,16 +39,15 @@ header {
              li {
                  border: 2px solid;
                  color: v.$colorSecundario;
+                 &:hover {
+                         background-color: rgb(240, 230, 205);
+                          }
 
                 a {
                     text-decoration: none;
                     font-family: v.$fuenteSecundaria;
                     color: v.$colorPrimario;
                     padding: 8px 15px;
-
-                   &:hover {
-                         background-color: rgb(240, 230, 205);
-                          }
                   }
               }
             }

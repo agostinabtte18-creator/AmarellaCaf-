@@ -43,14 +43,14 @@ header nav ul li {
   border: 2px solid;
   color: rgb(202, 97, 31);
 }
+header nav ul li:hover {
+  background-color: rgb(240, 230, 205);
+}
 header nav ul li a {
   text-decoration: none;
   font-family: "Libertinus Mono display";
   color: brown;
   padding: 8px 15px;
-}
-header nav ul li a:hover {
-  background-color: rgb(240, 230, 205);
 }
 
 @media (max-width: 430px) {
@@ -341,8 +341,14 @@ header nav ul li a:hover {
 .reservas .reserva-form .reservar {
   grid-area: reservar;
 }
+.reservas .reserva-form .reservar:hover {
+  background-color: rgb(240, 230, 205);
+}
 .reservas .reserva-form .cdn {
   grid-area: cdn;
+}
+.reservas .reserva-form .cdn:hover {
+  background-color: rgb(240, 230, 205);
 }
 .reservas iframe {
   height: 60vh;
@@ -455,7 +461,7 @@ footer .nav {
 .Galería {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "Ext Int Ft" " PT IOc . ";
+  grid-template-areas: "Ext Int ExtOcu" "Ft PT IOc ";
   gap: 10px;
   justify-items: center;
   align-items: center;
@@ -472,6 +478,10 @@ footer .nav {
     flex-direction: column;
     padding: 15px;
     gap: 0;
+  }
+  .Galería img {
+    height: 20vh;
+    width: auto;
   }
 }
 
